@@ -1,15 +1,17 @@
 import { Text, View } from "react-native";
 import React from "react";
-
-import styled from "styled-components/native";
 import { Container } from "./styles";
+import { SafeAreaView } from "react-native-safe-area-context";
+import Header from "../../components/Header/Header";
 
 export default function Home() {
   return (
-    <View>
-      <Container>
-        <Text>teste</Text>
-      </Container>
-    </View>
+    <SafeAreaView>
+      <View>
+        <Container>
+          <Header />
+        </Container>
+      </View>
+    </SafeAreaView>
   );
 }
